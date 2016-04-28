@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: black;
+}
+
+
+
+h1 {
+  margin:0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  line-height:50px;
+  border-bottom: 1px solid rgba(0, 0, 0, .10);
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+  background-color: white;
+  overflow: hidden;
+}
+
+h1#app-title {
+  font-weight: 500;
+}
+
+#messages {
+  margin: 44px 12px 0;
+}
+
+#thread-frame {
+  border-left: 1px solid rgba(0, 0, 0, .30);
+}
+
+
+
+.message {
+  clear: both;
+}
+
+.message .sender, .message .date, .message .content {
+  float: left;
+  display: block;
+}
+
+.message .sender, .message .date {
+  padding: 0 12px 5px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, .40);
+}
+
+.message .date {
+  visibility: hidden;
+  padding-top: 5px;
+}
+
+.message:hover .date {
+  visibility: visible;
+}
+
+.message .content {
+  max-width: 55%;
+  background-color: #f1f0f0;
+  border-radius: 1.3em;
+  margin-bottom: 2px;
+  padding: 6px 12px;
+  clear: both;
+  line-height: 1.28;
+}
+
+.message.group {
+	padding-top: 18px;
+}
+
+.message.me {
+  float: right;
+}
+
+.message.me .sender, .message.me .date, .message.me .content {
+  float: right;
+}
+
+.message.me .content {
+  color: white;
+  background-color: #0084ff;
+}
+
+.message:last-child .content {
+	margin-bottom: 12px;
+}
+
+
+
+ul#catalogue {
+  margin: 0;
+  padding: 0;
+  margin-top: 50px;
+}
+
+#catalogue li {
+  border-bottom: 1px solid rgba(0, 0, 0, .10);
+  padding-right: 20px;
+  list-style-type: none;
+}
+
+#catalogue li a {
+  display: block;
+  height: 71px;
+  line-height: 71px;
+  text-decoration: none;
+  overflow: hidden;
+  color: inherit;
+  padding-left: 20px;
+}
+
+p#select-thread {
+  margin: 12px;
+}
